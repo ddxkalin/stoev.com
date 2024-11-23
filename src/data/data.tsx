@@ -9,9 +9,7 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
@@ -26,7 +24,6 @@ import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
 import {
   About,
   ContactSection,
@@ -36,7 +33,6 @@ import {
   PortfolioItem,
   SkillGroup,
   Social,
-  TestimonialSection,
   TimelineItem,
 } from './dataDef';
 
@@ -44,8 +40,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Stoev',
+  description: "Example site built with Kalin Stoev's react resume template",
 };
 
 /**
@@ -59,7 +55,6 @@ export const SectionId = {
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
-  Testimonials: 'testimonials',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -69,18 +64,18 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Kalin Stoev.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
+        <strong className="text-stone-100">Software Engineer</strong>, currently working
+        at <strong className="text-stone-100">Inetum</strong> ex.DoITWise <strong className="text-stone-100">& BrainTech ltd</strong> helping build a modern, mobile-first, domain
         registrar and site builder.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me riding <strong className="text-stone-100">Motorbikes</strong>,
+        chilling at the <strong className="text-stone-100">beach</strong>, or exploring the beautiful{' '}
+        <strong className="text-stone-100">places on mother earth</strong>.
       </p>
     </>
   ),
@@ -104,16 +99,17 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `As an IT Consultant at Inetum (ex DoITWise), a ServiceNow Elite Partner, I have expanded my expertise to encompass the dynamic field of IT service management and digital workflows. 
+  Leveraging my strong background in Full Stack Development, I am now applying my skills in a consultative role to help organizations optimize their IT processes and implements effective ServiceNow solutions. 
+  My passion for technology and commitment to delivering high-quality results are now focused on guiding clients through digital transformations, ensuring they achieve maximum value from their IT investments.
+   I am excited to bring my problem-solving skills and technical acumen to this new challenge, contributing to the success of projects in a more strategic and impactful way.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Anywhere', Icon: MapIcon},
+    {label: 'Age', text: '27', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Bulgarian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Motorcycles, Crypto, Technologies, Travelling', Icon: SparklesIcon},
+    {label: 'Study', text: 'New Bulgarian University & SoftUni', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Inetum & BrainTech ltd', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -126,14 +122,31 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'English',
+        level: 9,
+      },
+      {
+        name: 'Bulgarian',
         level: 10,
       },
       {
-        name: 'French',
+        name: 'Spanish',
         level: 4,
       },
+    ],
+  },
+  {
+    name: 'Backend development',
+    skills: [
       {
-        name: 'Spanish',
+        name: '.Net',
+        level: 9,
+      },
+      {
+        name: 'Python',
+        level: 7,
+      },
+      {
+        name: 'Golang',
         level: 3,
       },
     ],
@@ -143,124 +156,107 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'Angular',
+        level: 8,
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'Typescript',
+        level: 8,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Databases',
     skills: [
       {
-        name: 'React Native',
-        level: 9,
+        name: 'MSSQL',
+        level: 8,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'PostgreSQL',
+        level: 8,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'MySQL',
+        level: 7,
       },
     ],
-  },
+  }
 ];
 
 /**
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
-  {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage1,
-  },
-  {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage2,
-  },
-  {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage3,
-  },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
-  },
+//  {
+//    title: 'Project title 1',
+//    description: 'Give a short description of your project here.',
+//    url: 'https://reactresume.com',
+//    image: porfolioImage1,
+//  },
+//  {
+//    title: 'Project title 2',
+//    description: 'Give a short description of your project here.',
+//    url: 'https://reactresume.com',
+//    image: porfolioImage2,
+//  },
+//  {
+//    title: 'Project title 3',
+//    description: 'Give a short description of your project here.',
+//    url: 'https://reactresume.com',
+//    image: porfolioImage3,
+//  },
+//  {
+//    title: 'Project title 4',
+//    description: 'Give a short description of your project here.',
+//    url: 'https://reactresume.com',
+//    image: porfolioImage4,
+//  },
+//  {
+//    title: 'Project title 5',
+//    description: 'Give a short description of your project here.',
+//    url: 'https://reactresume.com',
+//    image: porfolioImage5,
+//  },
+//  {
+//    title: 'Project title 6',
+//    description: 'Give a short description of your project here.',
+//    url: 'https://reactresume.com',
+//    image: porfolioImage6,
+//  },
+//  {
+//    title: 'Project title 7',
+//    description: 'Give a short description of your project here.',
+//    url: 'https://reactresume.com',
+//    image: porfolioImage7,
+//  },
+//  {
+//    title: 'Project title 8',
+//    description: 'Give a short description of your project here.',
+//    url: 'https://reactresume.com',
+//    image: porfolioImage8,
+//  },
+//  {
+//    title: 'Project title 9',
+//    description: 'Give a short description of your project here.',
+//    url: 'https://reactresume.com',
+//    image: porfolioImage9,
+//  },
+//  {
+//    title: 'Project title 10',
+//    description: 'Give a short description of your project here.',
+//    url: 'https://reactresume.com',
+//    image: porfolioImage10,
+//  },
+//  {
+//    title: 'Project title 11',
+//    description: 'Give a short description of your project here.',
+//    url: 'https://reactresume.com',
+//    image: porfolioImage11,
+//  },
 ];
 
 /**
@@ -268,67 +264,91 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2016 - Present',
+    location: 'New Bulgarian University',
+    title: 'Bachelors in IT',
+    content: <p>Activities and societies: Software Development, OOP, Design Patterns, SQL, Relational Databases, Data Structures, C#, Java, HTML, CSS, Operating Systems, Cloud Technologies, Mathematics, Linux, Algorithms, Java, C++, PHP</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2016 - 2018',
+    location: 'SoftUni',
+    title: 'Software Engineering',
+    content: <p>Activities and societies: Software Development, OOP, SOLID, Design Patterns, Algorithms, SQL, C#, ASP.Net, HTML, CSS, JavaScript</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'Dec 2023 - Present',
+    location: 'Inetum (ex.DoITWise)',
+    title: 'IT Consultant',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Seatbells on, new challange accepted.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'Aug 2023 - Present',
+    location: 'BalchikCon',
+    title: 'Speaker & Co-Organizer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Creating something unique for young IT enthusiasts and overcoming the fear of speaking in front of people. Smooth Operator...
+      </p>
+    ),
+  },
+  {
+    date: 'Feb 2023 - Nov 2023',
+    location: 'PSIT No Software',
+    title: 'FullStack Software Engineer Consultant',
+    content: (
+      <p>
+        Developing ERP systems. Riding with .NET Core, EF Core, Dapper, SQL, TypeScript, React, Angular, DevExtreme
+      </p>
+    ),
+  },
+  {
+    date: 'Sep 2022 - Present',
+    location: 'BrainTech ltd',
+    title: 'Full Stack Software Engineering Consultant',
+    content: (
+      <p>
+        I'm on an ongoing rollercoaster journey as we develop ERP systems. This thrilling ride features a dynamic technology stack, including .NET Core, EF Core, Dapper, SQL, JS, React, Angular, DevExtreme & ServiceNow. This experience allows me to continually adapt and deliver top-quality results in the ever-evolving ERP landscape, looking only forward!
+      </p>
+    ),
+  },
+  {
+    date: 'Mar 2022 - Sep 2022',
+    location: 'bet365',
+    title: 'FullStack Software Engineer',
+    content: (
+      <p>
+        I navigated a challenging transition from backend to frontend. This rollercoaster journey of shifting technologies became my favorite thrill, highlighting my adaptability and passion for end-to-end solutions in software engineering
+      </p>
+    ),
+  },
+  {
+    date: 'Dec 2020 - Mar 2022',
+    location: 'Sensata Technologies',
+    title: 'Software Engineer',
+    content: (
+      <p>
+        Developing internal applications using ASP.NET Core, REST APIs, jQuery, HTML/CSS, and Bootstrap. This marked the starting point of my rollercoaster ride through the entire software development lifecycle.
+      </p>
+    ),
+  },
+  {
+    date: 'Apr 2018 - Dec 2018',
+    location: 'Embassy of the United States in Bulgaria',
+    title: 'Software Engineer Intern',
+    content: (
+      <p>
+        Developed Management Control System with ASP.NET MVC and EF ORM, complemented by a responsive front-end dynamic JavaScript components. It was here that my passion for software engineering took off.
       </p>
     ),
   },
 ];
-
-/**
- * Testimonial section
- */
-export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
-  testimonials: [
-    {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-    },
-    {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
-  ],
-};
 
 /**
  * Contact section
@@ -340,23 +360,17 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'kalin@stoev.tech',
+      href: 'mailto:kalin@stoev.tech',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'Remote',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'ddxkalin',
+      href: 'https://github.com/ddxkalin',
     },
   ],
 };
@@ -365,9 +379,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/ddxkalin'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/kalinstoev9316/'},
+  {label: 'X', Icon: TwitterIcon, href: 'https://x.com/stoev_io'},
 ];
