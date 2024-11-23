@@ -346,7 +346,6 @@ export const experience: TimelineItem[] = [
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
   items: [
     {
       type: ContactType.Email,
@@ -354,13 +353,23 @@ export const contact: ContactSection = {
       href: 'mailto:kalin@stoev.tech',
     },
     {
-      type: ContactType.Location,
-      text: 'Remote',
+      type: ContactType.Phone,
+      text: '+35988228991'
     },
     {
       type: ContactType.Github,
       text: 'ddxkalin',
       href: 'https://github.com/ddxkalin',
+    },
+    {
+      type: ContactType.LinkedIn,
+      text: 'Kalin Stoev',
+      href: 'https://www.linkedin.com/in/kalinstoev9316/',
+    },
+    {
+      type: ContactType.Twitter,
+      text: 'stoev_io',
+      href: 'https://x.com/stoev_io',
     },
   ],
 };
