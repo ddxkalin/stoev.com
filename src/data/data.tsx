@@ -12,7 +12,7 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import profilepic from '../images/profilepic.jpg';
+import profile from '../images/profile.jpg';
 import {
   About,
   ContactSection,
@@ -54,16 +54,14 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Kalin Stoev.`,
+  name: `<Stoev />`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        <strong className="text-stone-100">Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Inetum</strong> ex.DoITWise <strong className="text-stone-100">& BrainTech ltd</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        <strong className="text-stone-100">Senior / The Guy Who Doesn’t Sleep / Oh Wow / The Geek / 24/7 Operational or whatever you want to call it... Software Engineer.</strong>
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me riding <strong className="text-stone-100">Motorbikes</strong>,
+        Catch me solving some IT problems, thinking that the solution will be the next unicorn, riding <strong className="text-stone-100">motorbikes</strong>,
         chilling at the <strong className="text-stone-100">beach</strong>, or exploring the beautiful{' '}
         <strong className="text-stone-100">places on mother earth</strong>.
       </p>
@@ -88,18 +86,19 @@ export const heroData: Hero = {
  * About section
  */
 export const aboutData: About = {
-  profileImageSrc: profilepic,
-  description: `As an IT Consultant at Inetum (ex DoITWise), a ServiceNow Elite Partner, I have expanded my expertise to encompass the dynamic field of IT service management and digital workflows. 
-  Leveraging my strong background in Full Stack Development, I am now applying my skills in a consultative role to help organizations optimize their IT processes and implements effective ServiceNow solutions. 
-  My passion for technology and commitment to delivering high-quality results are now focused on guiding clients through digital transformations, ensuring they achieve maximum value from their IT investments.
-   I am excited to bring my problem-solving skills and technical acumen to this new challenge, contributing to the success of projects in a more strategic and impactful way.`,
+  profileImageSrc: profile,
+  description: `Software Engineer with 6+ years of experience who has evolved into a technical strategist specializing in cloud architecture, AI systems, and emerging technologies. I combine hands-on development expertise with strategic vision to deliver innovative solutions.
+My background in Full Stack Development provides the foundation for my current work architecting cloud-native infrastructures, developing AI-powered applications, and leading agentic AI research initiatives.
+I excel at bridging cutting-edge innovation with practical implementation, translating complex technical concepts into business value. My focus areas include cloud optimization, intelligent systems development, and creating AI workflows that automate complex processes.
+Passionate about pushing technological boundaries while maintaining a clear focus on delivering measurable business impact.
+Working from 9-5 is definitely a mirage....`,
   aboutItems: [
     {label: 'Location', text: 'Anywhere', Icon: MapIcon},
-    {label: 'Age', text: '27', Icon: CalendarIcon},
+    {label: 'Age', text: '28', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Bulgarian', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Crypto, Technologies, Travelling', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Motorcycles, Crypto, Technologies, Travelling, AI, Entrepreneurship', Icon: SparklesIcon},
     {label: 'Study', text: 'New Bulgarian University & SoftUni', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Inetum & BrainTech ltd', Icon: BuildingOffice2Icon},
+    {label: 'Employment', text: 'BrainTech', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -108,19 +107,23 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Proficiency',
     skills: [
       {
-        name: 'English',
+        name: 'ServiceNow',
         level: 9,
       },
       {
-        name: 'Bulgarian',
-        level: 10,
+        name: 'Flowise',
+        level: 7,
       },
       {
-        name: 'Spanish',
-        level: 4,
+        name: 'Pseudocoding',
+        level: 9,
+      },
+      {
+        name: 'Machine Learning && Langchain',
+        level: 5,
       },
     ],
   },
@@ -133,11 +136,15 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Python',
-        level: 7,
+        level: 8,
       },
       {
         name: 'Golang',
-        level: 3,
+        level: 4,
+      },
+      {
+        name: 'Node.js',
+        level: 6,
       },
     ],
   },
@@ -145,22 +152,30 @@ export const skills: SkillGroup[] = [
     name: 'Frontend development',
     skills: [
       {
-        name: 'React',
-        level: 8,
+        name: 'React && Angluar',
+        level: 9,
       },
       {
-        name: 'Angular',
-        level: 8,
+        name: 'JS & TS ',
+        level: 9,
       },
       {
-        name: 'Typescript',
-        level: 8,
+        name: 'React-Native',
+        level: 7,
+      },
+      {
+        name: 'Next.js',
+        level: 4,
       },
     ],
   },
   {
     name: 'Databases',
     skills: [
+      {
+        name: 'Vector DBs',
+        level: 7,
+      },
       {
         name: 'MSSQL',
         level: 8,
@@ -181,17 +196,18 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
-//  {
-//    title: 'Project title 1',
-//    description: 'Give a short description of your project here.',
-//    url: 'https://reactresume.com',
-//    image: porfolioImage1,
+ {
+   title: 'FlowLink',
+   description: 'FlowLink is a data pipeline application that uses ServiceNow IRE to manage hierarchical data. It is a tool that allows you to create a data pipeline that can be used to manage your data.',
+   url: 'https://flowlink.stoev.tech',
+  //  image: ''
+ }
 //  },
 //  {
-//    title: 'Project title 2',
-//    description: 'Give a short description of your project here.',
-//    url: 'https://reactresume.com',
-//    image: porfolioImage2,
+//    title: 'Flowise',
+//    description: 'Flowise is a low-code platform that allows you to create workflows that can be used to manage your data.',
+//    url: 'https://flowise.stoev.tech',
+//   //  image: '',
 //  },
 //  {
 //    title: 'Project title 3',
@@ -447,7 +463,7 @@ optimized application architecture for scalability and reliability.
  */
 
 export const contact: ContactSection = {
-  headerText: 'Get in touch.',
+  headerText: 'HAVE AN IDEA OR NEED A DEMO? HIT ME UP!',
   items: [
     {
       type: ContactType.Email,

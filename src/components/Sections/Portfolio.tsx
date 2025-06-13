@@ -1,6 +1,5 @@
 import {ArrowTopRightOnSquareIcon} from '@heroicons/react/24/outline';
 import classNames from 'classnames';
-import Image from 'next/image';
 import {FC, memo, MouseEvent, useCallback, useEffect, useRef, useState} from 'react';
 
 import {isMobile} from '../../config';
@@ -13,7 +12,8 @@ const Portfolio: FC = memo(() => {
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
-        <h2 className="self-center text-xl font-bold text-white">Check out some of my work</h2>
+        <h2 className="self-center text-xl font-bold text-white">Check out some of my work <a className="text-orange-500 hover:text-orange-400 transition-colors" href="https://github.com/ddxkalin" target="_blank">here</a></h2>
+        <h4 className="self-center text-xl font-bold text-orange-500">FYI <span className="text-white">we didn't use GitHub on my previous job :))</span></h4>
         <div className=" w-full columns-2 md:columns-3 lg:columns-4">
           {portfolioItems.map((item, index) => {
             const {title, image} = item;
@@ -23,7 +23,7 @@ const Portfolio: FC = memo(() => {
                   className={classNames(
                     'relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
                   )}>
-                  <Image alt={title} className="h-full w-full" placeholder="blur" src={image} />
+                  {/* <Image alt={title} className="h-full w-full" placeholder="blur" src={image} /> */}
                   <ItemOverlay item={item} />
                 </div>
               </div>
