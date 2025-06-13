@@ -269,42 +269,120 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'Dec 2023 - Present',
+    date: 'Dec 2023 - Jun 2025',
     location: 'Inetum (ex.DoITWise)',
-    title: 'IT Consultant',
+    title: 'Senior IT Consultant',
     content: (
       <p>
         Seatbells on, new challange accepted.
+        SAP and ServiceNow Process Optimisation: Streamlined ITSM processes
+by integrating SAP modules with ServiceNow workflows, reducing ticket
+resolution times and enhancing cross-platform visibility.
+Workshops and Training: Conducted workshops with clients and
+colleagues to share knowledge on best practices for ServiceNow
+implementation, process optimization, and Agile development methodologies.
+These sessions aimed to equip participants with the skills needed to drive
+digital transformation in their organizations.
+Collaboration: Worked closely with developers, architects, and
+business stakeholders to deliver high-quality solutions aligned with
+customer requirements and industry best practices.
+Development Practices: Introduced automation and best practices to
+streamline development workflows, reducing deployment times and improving
+overall team productivity.
+Technical Leadership: Provided technical guidance and mentorship to
+junior engineers, fostering a culture of innovation and continuous
+improvement.
       </p>
     ),
   },
   {
     date: 'Aug 2023 - Present',
     location: 'BalchikCon',
-    title: 'Speaker & Co-Organizer',
+    title: 'Co-Founder & Speaker',
     content: (
       <p>
         Creating something unique for young IT enthusiasts and overcoming the fear of speaking in front of people. Smooth Operator...
-      </p>
-    ),
-  },
-  {
-    date: 'Feb 2023 - Nov 2023',
-    location: 'PSIT No Software',
-    title: 'FullStack Software Engineer Consultant',
-    content: (
-      <p>
-        Developing ERP systems. Riding with .NET Core, EF Core, Dapper, SQL, TypeScript, React, Angular, DevExtreme
+        Event Creation and Coordination: Co-led the organization of
+BalchikCon, an innovative event designed to equip attendees with the
+skills and knowledge needed to succeed in the IT industry. Collaborated
+with a dedicated team to plan, structure, and execute the event, ensuring
+a seamless and engaging experience for over 300 participants.
+Inspiring and Guiding: Delivered presentations and workshops on
+topics such as career development, emerging technologies, and best
+practices for breaking into the industry. Inspired and mentored attendees,
+helping them gain clarity and confidence in pursuing IT careers.
+Speaker and Mentor Recruitment: Identified and onboarded experienced
+industry professionals as speakers and mentors, ensuring a diverse and
+high-quality lineup of sessions tailored to the needs of beginners.
+Community Building: Fostered a welcoming and inclusive environment
+for attendees, encouraging networking, knowledge sharing, and
+collaboration among participants.
+Event Promotion and Outreach: Contributed to marketing efforts,
+increasing event visibility and resulting in 300+ attendees and 85% growth
+in participation year-over-year.
+Continuous Improvement: Gathered feedback from attendees and
+speakers to refine the event format, content, and organization, ensuring
+each iteration of BalchikCon is more impactful than the last.
       </p>
     ),
   },
   {
     date: 'Sep 2022 - Present',
     location: 'BrainTech ltd',
-    title: 'Full Stack Software Engineering Consultant',
+    title: 'CEO & Founder',
     content: (
       <p>
         I'm on an ongoing rollercoaster journey as we develop ERP systems. This thrilling ride features a dynamic technology stack, including .NET Core, EF Core, Dapper, SQL, JS, React, Angular, DevExtreme & ServiceNow. This experience allows me to continually adapt and deliver top-quality results in the ever-evolving ERP landscape, looking only forward!
+        A boutique technology consultancy delivering sophisticated software solutions across B2B, B2C, and B2B2C domains. As Founder, I architect and implement tailored technology ecosystems that drive business transformation through innovative AI-native applications, intelligent system design, and custom development workflows.
+Core Capabilities
+Advanced Technology Integration
+
+Develop bespoke enterprise software solutions leveraging diverse technological stacks
+Design and implement AI-native applications with custom agent workflows
+Lead cutting-edge R&D initiatives to solve complex business challenges
+
+Technical Expertise
+
+Full-stack development: ASP.NET Core, Python, C#, JavaScript, TypeScript
+Frontend frameworks: Angular, React, DevExpress
+Low-code automation: Flowise
+Project management: Jira, Agile methodologies
+
+Enterprise Solutions
+
+Streamlined ITSM processes through SAP-ServiceNow integration, reducing resolution times
+Designed custom CI/CD pipelines for ServiceNow implementations supporting SAFe and Agile frameworks
+Architected Flowlink, a sophisticated data pipeline application utilizing ServiceNow IRE for hierarchical data management
+
+Leadership & Collaboration
+
+Facilitate technical workshops and training sessions on ServiceNow implementation best practices
+Partner with stakeholders across development, architecture, and business domains
+Provide technical mentorship while cultivating innovation cultures
+Implement automation and development best practices to enhance productivity and delivery quality
+
+BrainTech delivers not just technology solutions, but true transformation partnerships that propel businesses forward through thoughtful architecture, skilled implementation, and dedicated support.
+      </p>
+    ),
+  },
+  {
+    date: 'Feb 2023 - Nov 2023',
+    location: 'PSIT No Software',
+    title: 'FullStack Software Engineer',
+    content: (
+      <p>
+        Developing ERP systems. Riding with .NET Core, EF Core, Dapper, SQL, TypeScript, React, Angular, DevExtreme
+        Technical Expertise: Utilized a range of programming languages,
+including ASP.NET Core, TypeScript, C#, and JavaScript, as well as
+frameworks like Angular, React, and DevExpress.
+ERP System Development: Collaborated on the development of PSIT's
+ERP system, ensuring seamless integration with Microsoft SQL Server and
+other databases.
+Frontend and Backend Development: Designed and implemented frontend
+and backend solutions using Angular, React, and ASP.NET Core, leveraging
+expertise in HTML5, CSS, and JavaScript.
+Agile Methodologies: Worked in an Agile environment, utilizing Jira
+for project management and version control with Git.
       </p>
     ),
   },
@@ -315,6 +393,30 @@ export const experience: TimelineItem[] = [
     content: (
       <p>
         I navigated a challenging transition from backend to frontend. This rollercoaster journey of shifting technologies became my favorite thrill, highlighting my adaptability and passion for end-to-end solutions in software engineering
+        Technical Expertise: Leveraged expertise in ASP.NET Core,
+TypeScript, C#, and JavaScript, as well as frameworks like React and Go
+(Programming Language), to drive solution development.
+Gaming Technology Development: Collaborated on the creation of
+cutting-edge gaming technologies for bet365, utilizing skills in HTML5,
+CSS, and JavaScript to craft engaging user experiences.
+Agile Methodologies: Worked in an Agile environment, utilizing Jira
+for project management and version control with Gitlab.
+Data Integration: Designed and implemented data integrations using
+stored procedures, SQL, and APIs to ensure seamless data flow between
+systems.
+API Development: Built RESTful APIs using ASP.NET Core and C# to
+facilitate communication between applications.
+Database Management: Managed databases using Microsoft SQL Server,
+ensuring optimal performance and scalability.
+Error Handling: Implemented robust error handling mechanisms to
+minimize downtime and optimize user experience.
+Code Optimization: Optimized code for improved performance,
+security, and maintainability, utilizing tools like Visual Studio and
+ReSharper.
+Testing and Quality Assurance: Collaborated with QA teams to develop
+comprehensive testing suites, ensuring high-quality software delivery.
+Scalability and Performance Tuning: Analyzed system performance and
+optimized application architecture for scalability and reliability.
       </p>
     ),
   },
