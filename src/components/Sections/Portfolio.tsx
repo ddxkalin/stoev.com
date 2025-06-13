@@ -16,7 +16,7 @@ const Portfolio: FC = memo(() => {
         <h4 className="self-center text-xl font-bold text-orange-500">FYI <span className="text-white">we didn't use GitHub on my previous job :))</span></h4>
         <div className=" w-full columns-2 md:columns-3 lg:columns-4">
           {portfolioItems.map((item, index) => {
-            const {title, image} = item;
+            const {title} = item;
             return (
               <div className="pb-6" key={`${title}-${index}`}>
                 <div
